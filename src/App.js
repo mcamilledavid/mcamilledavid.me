@@ -5,9 +5,76 @@ import 'react-typist/dist/Typist.css';
 import { Container, Row, Col } from 'react-grid-system';
 import './App.css';
 
+const { changeHorizontalSlide } = Fullpage;
+
+const horizontalNavStyle = {
+    position: 'absolute',
+    width: '100%',
+    top: '50%',
+    zIndex: 10
+};
+
+
+const horizontalSliderProps = {
+    name: 'horizontalSlider1',
+    infinite: true
+};
+
+
 class App extends Component {
-    render() {
-        const fullPageOptions = {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: {
+                horizontalSlider1: 0
+            }
+        };
+
+        this.onSlideChangeStart = this.onSlideChangeStart.bind(this);
+        this.onSlideChangeEnd = this.onSlideChangeEnd.bind(this);
+    }
+
+    onSlideChangeStart(name, props, state, newState) {
+        if (!this.horizontalNav) {
+            this.horizontalNav = document.getElementById('horizontal-nav');
+        }
+
+        if (name === 'horizontalSlider1') {
+            scrollNavStart(this.horizontalNav);
+        }
+    }
+
+    onSlideChangeEnd(name, props, state, newState) {
+        if (name === 'horizontalSlider1') {
+            scrollNavEnd(this.horizontalNav);
+        }
+
+        const oldActive = this.state.active;
+        const sliderState = {
+            [name]: newState.activeSlide
+        };
+
+        const updatedState = Object.assign(oldActive, sliderState);
+        this.setState(updatedState);
+    }
+
+    componentDidMount() {
+
+    }
+
+
+        render() {
+            const { active } = this.state;
+
+
+            const horizontalSliderName = horizontalSliderProps.name;
+            const horizontalActive = this.state.active[horizontalSliderName];
+
+            const prevHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive - 1);
+            const nextHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive + 1);
+
+
+            const fullPageOptions = {
             scrollSensitivity: 2,
             touchSensitivity: 2,
             scrollSpeed: 500,
@@ -17,12 +84,14 @@ class App extends Component {
             activeSlide: 0
         };
 
-        const horizontalSliderProps = {
-            name: 'horizontalSlider1',
-            infinite: true
-        };
+            const horizontalNav = (
+                <div id='horizontal-nav' style={horizontalNavStyle}>
+                    <span onClick={prevHorizontalSlide}><button>PREV</button></span>
+                    <span style={{position: 'absolute', right: '0px'}} onClick={nextHorizontalSlide}><button>Next</button></span>
+                </div>
+            );
 
-        const horizontalSlides = [
+            const horizontalSlides = [
             <Slide>
                 <Container>
                     <Row>
@@ -54,7 +123,7 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col sm={6}>
-                                <h1 className="h1">In my free time, I like to watch movies, play guitar, and travel.</h1>
+                                <h1 className="h1">In my free time, I like to watch films, play music, take videos & travel.</h1>
                                 <h2 className="h2">Contact me if you want to work with me or if you just want to chat or hang out.</h2>
                                 <button href="mailto:ma.camilledavid@gmail.com">Contact</button>
                             </Col>
@@ -67,7 +136,10 @@ class App extends Component {
         ];
         horizontalSliderProps.slides = horizontalSlides;
 
-        const slides = [
+            const horizontalSlider = <HorizontalSlider id='horizontal-slider-1' {...horizontalSliderProps}>{horizontalNav}</HorizontalSlider>;
+
+
+            const slides = [
             <Slide id="intro">
                 <div id="social">
                     <a href="mailto:ma.camilledavid@gmail.com">Email</a>
@@ -80,7 +152,7 @@ class App extends Component {
                     <h1><Typist className="heading">Camille David.</Typist></h1>
                 </div>
             </Slide>,
-            <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
+                horizontalSlider,
             <Slide id="work">
                 <Container>
                     <Row>
@@ -131,9 +203,21 @@ class App extends Component {
         fullPageOptions.slides = slides;
 
         return (
-            <Fullpage {...fullPageOptions} />
+            <Fullpage onSlideChangeStart={this.onSlideChangeStart} onSlideChangeEnd={this.onSlideChangeEnd} {...fullPageOptions}>
+            </Fullpage>
         );
     }
+}
+
+
+function scrollNavStart(nav) {
+    // make the nav fixed when we start scrolling horizontally
+    nav.style.position = 'fixed';
+}
+
+function scrollNavEnd(nav) {
+    // make the nav absolute when scroll finishes
+    nav.style.position = 'absolute';
 }
 
 export default App;

@@ -1,28 +1,197 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.sub-heading {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-transform: uppercase
 }
 
-.App-intro {
-  font-size: large;
+.heading {
+  font-size: 70px;
+  letter-spacing: 3px;
+  margin-top: -20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#social {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.HorizontalSlider {
+  margin: 0 auto!important;
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .h2 {
+    font-weight: 400;
+    line-height: 40px;
+    color: #888;
+  }
+
+  button {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 15px 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing:1px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+  }
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+}
+
+#work {
+  div {
+    max-width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    text-align: center;
+    height: 50vh;
+  }
+
+
+  #teamft {
+    color: white;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+
+    #teamft-logo {
+      width: 200px;
+    }
+  }
+
+  #cpshop {
+    color: white;
+    background: #b6da5c;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+
+    #cpshop-logo {
+      width: 150px;
+    }
+  }
+
+  #cp {
+    color: white;
+    background: #89c35c;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+
+    #cp-logo {
+      width: 150px;
+    }
+  }
+
+  #casa {
+    color: white;
+    background: lightslategrey;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+
+    #casa-logo {
+      width: 150px;
+    }
+  }
 }

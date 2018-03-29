@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fullpage-react": "^3.0.30",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-fullpage": "^0.1.18",
+    "react-grid-system": "^3.1.2",
+    "react-scripts": "1.1.1",
+    "react-typist": "^2.0.4"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

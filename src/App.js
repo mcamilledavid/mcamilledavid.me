@@ -3,7 +3,10 @@ import { Fullpage, Slide, HorizontalSlider } from 'fullpage-react';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import { Container, Row, Col } from 'react-grid-system';
+import Slider from 'react-slick'
 import './App.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const { changeHorizontalSlide } = Fullpage;
 
@@ -45,6 +48,15 @@ class App extends Component {
     }
 
     render() {
+        var settings = {
+            dots: false,
+            infinite: true,
+            speed: 200,
+            autoplay: true,
+            autoplaySpeed: 750,
+            responsive: [ { breakpoint: 768, settings: 'unslick' }, { breakpoint: 1024, settings: { slidesToShow: 6, slidesToScroll: 1 } }, { breakpoint: 100000, settings: { slidesToShow: 8, slidesToScroll: 1 } } ]
+        };
+
         const horizontalSliderName = horizontalSliderProps.name;
         const horizontalActive = this.state.active[horizontalSliderName];
         const nextHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive + 1);
@@ -70,7 +82,7 @@ class App extends Component {
             <video className="vid-background" autoPlay loop>
                 <source src={require('./la.mp4')} type="video/mp4" />
             </video>
-            <img className="img-background" src={require('./la-still.png')} alt="Plane" />
+            <img className="img-background" src={require('./la-still.png')} alt="LA" />
             <Container className="container">
                 <Row>
                     <Col sm={12} md={9} lg={7} xl={6}>
@@ -110,60 +122,6 @@ class App extends Component {
         horizontalSliderProps.slides = horizontalSlides;
 
         const slides = [
-            <Slide id="skills">
-                <Container className="container">
-                    <Row>
-                        <Col sm={12} md={9} lg={7} xl={6}>
-                            <h1 className="h1">Here are some things that I can do.</h1>
-                            <h2 className="h2">But I'm always trying to learn new skills and technologies. Right now, I'm starting to play around with Node.js and iOS development.</h2>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs={6} lg={3}>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                                <li>Foundation</li>
-                                <li>Grunt</li>
-                                <li>SASS</li>
-                                <li>WordPress</li>
-                                <li>Drupal</li>
-                            </ul>
-                        </Col>
-                        <Col xs={6} lg={3}>
-                            <ul>
-                                <li>PHP</li>
-                                <li>Java</li>
-                                <li>MySQL</li>
-                                <li>MongoDB</li>
-                                <li>Node.js/Express</li>
-                                <li>iOS Dev</li>
-                            </ul>
-                        </Col>
-                        <Col xs={6} lg={3}>
-                            <ul>
-                                <li>AWS</li>
-                                <li>Linux</li>
-                                <li>Apache/NGINX</li>
-                                <li>Git</li>
-                                <li>Command Line</li>
-                            </ul>
-                        </Col>
-                        <Col xs={6} lg={3}>
-                            <ul>
-                                <li>UI/UX Design</li>
-                                <li>Graphic Design</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>Sketch</li>
-                            </ul>
-                        </Col>
-                    </Row>
-                </Container>
-            </Slide>,
         <Slide id="intro">
             <div id="social">
                 <a href="mailto:ma.camilledavid@gmail.com">Email</a>
@@ -177,6 +135,47 @@ class App extends Component {
             </div>
         </Slide>,
         <HorizontalSlider id='profile' {...horizontalSliderProps}></HorizontalSlider>,
+        <Slide id="skills">
+            <Container className="container">
+                <Row className="row">
+                    <Col sm={12} md={9} lg={8} xl={8} className="column">
+                        <h1 className="h1">Here are some things <br/> that I can do.</h1>
+                        <h2 className="h2">But I'm always trying to learn new skills. Right now, I'm playing around with a Firebase backend iOS app & I just finished making this site with React.</h2>
+                    </Col>
+                </Row>
+                <Row className="row">
+                    <Col lg={12}>
+                        <Slider className="slider" {...settings}>
+                            <div className="icon-container"><img className="icon" src={require('./skills/html.png')} alt="HTML" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/css.png')} alt="CSS" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/js.png')} alt="JavaScript" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/jquery.png')} alt="jQuery" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/bootstrap.png')} alt="Bootstrap" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/foundation.png')} alt="Foundation" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/grunt.png')} alt="Grunt" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/sass.png')} alt="SASS" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/wp.png')} alt="WordPress" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/drupal.png')} alt="Drupal" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/php.png')} alt="PHP" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/java.png')} alt="Java" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/mysql.png')} alt="MySQL" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/mongodb.png')} alt="MongoDB" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/node.png')} alt="Node.js" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/express.png')} alt="Express" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/aws.png')} alt="AWS" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/linux.png')} alt="Linux" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/apache.png')} alt="Apache" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/nginx.png')} alt="Nginx" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/git.png')} alt="Git" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/terminal.png')} alt="Terminal" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/photoshop.png')} alt="Photoshop" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/illustrator.png')} alt="Illustrator" /></div>
+                            <div className="icon-container"><img className="icon" src={require('./skills/sketch.png')} alt="Sketch" /></div>
+                        </Slider>
+                    </Col>
+                </Row>
+            </Container>
+        </Slide>,
         <Slide id="work">
             <Container>
                 <Row>

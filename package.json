@@ -11,7 +11,9 @@
     "react-fullpage": "^0.1.18",
     "react-grid-system": "^3.1.2",
     "react-scripts": "1.1.1",
-    "react-typist": "^2.0.4"
+    "react-slick": "^0.22.3",
+    "react-typist": "^2.0.4",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

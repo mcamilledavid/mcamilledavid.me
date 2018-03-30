@@ -7,19 +7,10 @@ import './App.css';
 
 const { changeHorizontalSlide } = Fullpage;
 
-const horizontalNavStyle = {
-    position: 'absolute',
-    width: '100%',
-    top: '50%',
-    zIndex: 10
-};
-
-
 const horizontalSliderProps = {
     name: 'horizontalSlider1',
     infinite: true
 };
-
 
 class App extends Component {
     constructor(props) {
@@ -29,7 +20,6 @@ class App extends Component {
                 horizontalSlider1: 0
             }
         };
-
         this.onSlideChangeStart = this.onSlideChangeStart.bind(this);
         this.onSlideChangeEnd = this.onSlideChangeEnd.bind(this);
     }
@@ -38,17 +28,9 @@ class App extends Component {
         if (!this.horizontalNav) {
             this.horizontalNav = document.getElementById('horizontal-nav');
         }
-
-        if (name === 'horizontalSlider1') {
-            scrollNavStart(this.horizontalNav);
-        }
     }
 
     onSlideChangeEnd(name, props, state, newState) {
-        if (name === 'horizontalSlider1') {
-            scrollNavEnd(this.horizontalNav);
-        }
-
         const oldActive = this.state.active;
         const sliderState = {
             [name]: newState.activeSlide
@@ -62,19 +44,12 @@ class App extends Component {
 
     }
 
+    render() {
+        const horizontalSliderName = horizontalSliderProps.name;
+        const horizontalActive = this.state.active[horizontalSliderName];
+        const nextHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive + 1);
 
-        render() {
-            const { active } = this.state;
-
-
-            const horizontalSliderName = horizontalSliderProps.name;
-            const horizontalActive = this.state.active[horizontalSliderName];
-
-            const prevHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive - 1);
-            const nextHorizontalSlide = changeHorizontalSlide.bind(null, horizontalSliderName, horizontalActive + 1);
-
-
-            const fullPageOptions = {
+        const fullPageOptions = {
             scrollSensitivity: 2,
             touchSensitivity: 2,
             scrollSpeed: 500,
@@ -84,121 +59,147 @@ class App extends Component {
             activeSlide: 0
         };
 
-            const horizontalNav = (
-                <div id='horizontal-nav' style={horizontalNavStyle}>
-                    <span onClick={prevHorizontalSlide}><button>PREV</button></span>
-                    <span style={{position: 'absolute', right: '0px'}} onClick={nextHorizontalSlide}><button>Next</button></span>
-                </div>
-            );
+        const horizontalNav = (
+            <div id='horizontal-nav'>
+                <span onClick={nextHorizontalSlide}><button>Next &#8594;</button></span>
+            </div>
+        );
 
-            const horizontalSlides = [
-            <Slide>
-                <Container>
-                    <Row>
-                        <Col sm={6}>
-                            <h1 className="h1">I'm an avid programmer based in LA,</h1>
-                            <h2 className="h2">with a passion for creativity and problem solving. I build websites, deploy servers, design interfaces, and tinker with mobile apps.</h2>
-                        </Col>
-                        <Col sm={6}>
-                        </Col>
-                    </Row>
-                </Container>
-            </Slide>,
-            <Slide>
-                <div className="inner">
-                    <Container>
-                        <Row>
-                            <Col sm={6}>
-                                <h1 className="h1">Bringing designs to life and making them is what I love to do most,</h1>
-                                <h2 className="h2">but I can also pretty much jump into anything in between, from CMS to e-commerce, and even server admin.</h2>
-                            </Col>
-                            <Col sm={6}>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-            </Slide>,
-            <Slide>
-                <div className="inner">
-                    <Container>
-                        <Row>
-                            <Col sm={6}>
-                                <h1 className="h1">In my free time, I like to watch films, play music, take videos & travel.</h1>
-                                <h2 className="h2">Contact me if you want to work with me or if you just want to chat or hang out.</h2>
-                                <button href="mailto:ma.camilledavid@gmail.com">Contact</button>
-                            </Col>
-                            <Col sm={6}>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-            </Slide>
+        const horizontalSlides = [
+        <Slide>
+            <video className="vid-background" autoPlay loop>
+                <source src={require('./la.mp4')} type="video/mp4" />
+            </video>
+            <img className="img-background" src={require('./la-still.png')} alt="Plane" />
+            <Container className="container">
+                <Row>
+                    <Col sm={12} md={9} lg={7} xl={6}>
+                        <h1 className="h1">Full Stack Developer based in LA,</h1>
+                        <h2 className="h2">with a passion for creativity and problem solving. I build websites, deploy servers, design interfaces & tinker around with mobile apps.</h2>
+                        {horizontalNav}
+                    </Col>
+                </Row>
+            </Container>
+        </Slide>,
+        <Slide>
+            <Container className="container">
+                <Row>
+                    <Col sm={12} md={9} lg={7} xl={6}>
+                        <h1 className="h1">Creating designs to life & bringing them is what I love to do most,</h1>
+                        <h2 className="h2">but I can also pretty much jump into anything in between, from CMS to databases, even server admin & even e-commerce.</h2>
+                        {horizontalNav}
+                    </Col>
+                </Row>
+            </Container>
+        </Slide>,
+        <Slide>
+            <Container className="container">
+                <Row>
+                    <Col sm={12} md={9} lg={7} xl={6}>
+                        <h1 className="h1">In my free time, I watch movies, play music, take videos, or travel.</h1>
+                        <h2 className="h2">
+                            Contact me if you want to work together or if you just want to chat or hang out. I'm open to any opportunities.
+                            <img id="shaka-emoji" src={require('./emoji.png')} alt="Shaka Emoji" />
+                        </h2>
+                        <a href="mailto:ma.camilledavid@gmail.com">Contact</a>
+                    </Col>
+                </Row>
+            </Container>
+        </Slide>
         ];
         horizontalSliderProps.slides = horizontalSlides;
 
-            const horizontalSlider = <HorizontalSlider id='horizontal-slider-1' {...horizontalSliderProps}>{horizontalNav}</HorizontalSlider>;
-
-
-            const slides = [
-            <Slide id="intro">
-                <div id="social">
-                    <a href="mailto:ma.camilledavid@gmail.com">Email</a>
-                    <a href="http://www.linkedin.com/in/mcamilledavid">LinkedIn</a>
-                    <a href="http://www.github.com/mcamilledavid">Github</a>
-                    <a href="http://www.instagram.com/mcamilledavid">Instagram</a>
-                </div>
-                <div className="inner">
-                    <h2 className="sub-heading">Hello, my name is</h2>
-                    <h1><Typist className="heading">Camille David.</Typist></h1>
-                </div>
-            </Slide>,
-                horizontalSlider,
-            <Slide id="work">
-                <Container>
-                    <Row>
-                        <Col sm={6} id="teamft">
-                            <img id="teamft-logo" src={require('./teamft.png')} />
-                        </Col>
-                        <Col sm={6} id="cp">
-                            <img id="cp-logo" src={require('./cp.png')} />
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col sm={6} id="cpshop">
-                            <img id="cpshop-logo" src={require('./cpshop.png')} />
-                        </Col>
-                        <Col sm={6} id="casa">
-                            <img id="casa-logo" src={require('./casa.png')} />
-                        </Col>
-                    </Row>
-                </Container>
-            </Slide>,
+        const slides = [
             <Slide id="skills">
-                <Container>
+                <Container className="container">
                     <Row>
-                        <Col sm={2}>
-                            Skills
+                        <Col sm={12} md={9} lg={7} xl={6}>
+                            <h1 className="h1">Here are some things that I can do.</h1>
+                            <h2 className="h2">But I'm always trying to learn new skills and technologies. Right now, I'm starting to play around with Node.js and iOS development.</h2>
                         </Col>
-                        <Col sm={2}>
-                            Languages
+                    </Row>
+                    <Row>
+                        <Col xs={6} lg={3}>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>Bootstrap</li>
+                                <li>Foundation</li>
+                                <li>Grunt</li>
+                                <li>SASS</li>
+                                <li>WordPress</li>
+                                <li>Drupal</li>
+                            </ul>
                         </Col>
-                        <Col sm={2}>
-                            Tools
+                        <Col xs={6} lg={3}>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Java</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Node.js/Express</li>
+                                <li>iOS Dev</li>
+                            </ul>
                         </Col>
-                        <Col sm={2}>
-                            Frameworks
+                        <Col xs={6} lg={3}>
+                            <ul>
+                                <li>AWS</li>
+                                <li>Linux</li>
+                                <li>Apache/NGINX</li>
+                                <li>Git</li>
+                                <li>Command Line</li>
+                            </ul>
                         </Col>
-                        <Col sm={2}>
-                            Design
-                        </Col>
-                        <Col sm={2}>
-                            Platforms
+                        <Col xs={6} lg={3}>
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>Graphic Design</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Sketch</li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
-            </Slide>
+            </Slide>,
+        <Slide id="intro">
+            <div id="social">
+                <a href="mailto:ma.camilledavid@gmail.com">Email</a>
+                <a href="http://www.linkedin.com/in/mcamilledavid">LinkedIn</a>
+                <a href="http://www.github.com/mcamilledavid">Github</a>
+                <a href="http://www.instagram.com/mcamilledavid">Instagram</a>
+            </div>
+            <div>
+                <h2 className="h2">Hello, my name is</h2>
+                <h1><Typist className="h1">Camille David.</Typist></h1>
+            </div>
+        </Slide>,
+        <HorizontalSlider id='profile' {...horizontalSliderProps}></HorizontalSlider>,
+        <Slide id="work">
+            <Container>
+                <Row>
+                    <Col xs={12} lg={6} id="teamft">
+                        <img id="teamft-logo" src={require('./teamft.png')} alt="Fitness Therapy Logo" />
+                    </Col>
+                    <Col xs={12} lg={6} id="cp">
+                        <img id="cp-logo" src={require('./cp.png')} alt="Cooking Panda Logo" />
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col xs={12} lg={6} id="cpshop">
+                        <img id="cpshop-logo" src={require('./cpshop.png')} alt="Cooking Panda Shop Logo" />
+                    </Col>
+                    <Col xs={12} lg={6} id="casa">
+                        <img id="casa-logo" src={require('./casa.png')} alt="Casa Logo" />
+                    </Col>
+                </Row>
+            </Container>
+        </Slide>,
+
         ];
         fullPageOptions.slides = slides;
 
@@ -207,17 +208,6 @@ class App extends Component {
             </Fullpage>
         );
     }
-}
-
-
-function scrollNavStart(nav) {
-    // make the nav fixed when we start scrolling horizontally
-    nav.style.position = 'fixed';
-}
-
-function scrollNavEnd(nav) {
-    // make the nav absolute when scroll finishes
-    nav.style.position = 'absolute';
 }
 
 export default App;

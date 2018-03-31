@@ -263,20 +263,23 @@ h6 {
 }
 
 #work {
-  div {
-    max-width: 100%!important;
-    margin: 0!important;
-    padding: 0!important;
-    text-align: center;
-    height: 50vh;
+  .wrapper {
+    height: 100%;
   }
 
-  .item {
+  .row {
+    height: 50%;
+  }
+
+  .tile {
     display: flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
     cursor: pointer;
+    height: 100%;
+    width: 50%;
+    float: left;
 
     &:hover {
       background: rgba(0, 0, 0, 0.75);
@@ -290,53 +293,71 @@ h6 {
 
 
   #teamft {
-    @extend .item;
+    @extend .tile;
     background: rgba(0, 0, 0, 1);
 
     #teamft-logo {
-      width: 200px;
+      width: 125px;
 
-      @include bp(small-down) {
+      @include bp(medium) {
         width: 150px;
+      }
+
+      @include bp(large) {
+        width: 200px;
       }
     }
   }
 
   #cpshop {
-    @extend .item;
+    @extend .tile;
     background: #b6da5c;
 
     #cpshop-logo {
-      width: 150px;
+      width: 100px;
 
-      @include bp(small-down) {
-        width: 115px;
+      @include bp(medium) {
+        width: 125px;
+      }
+
+
+      @include bp(large) {
+        width: 150px;
       }
     }
   }
 
   #cp {
-    @extend .item;
+    @extend .tile;
     background: #89c35c;
 
     #cp-logo {
-      width: 150px;
+      width: 100px;
 
-      @include bp(small-down) {
-        width: 115px;
+      @include bp(medium) {
+        width: 125px;
+      }
+
+
+      @include bp(large) {
+        width: 150px;
       }
     }
   }
 
   #casa {
-    @extend .item;
+    @extend .tile;
     background: lightslategrey;
 
     #casa-logo {
-      width: 150px;
+      width: 100px;
 
-      @include bp(small-down) {
-        width: 115px;
+      @include bp(medium) {
+        width: 125px;
+      }
+
+      @include bp(large) {
+        width: 150px;
       }
     }
   }

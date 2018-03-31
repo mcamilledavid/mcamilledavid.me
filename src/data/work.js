@@ -7,6 +7,12 @@ const work = {
             img: "teamft.png"
         },
         {
+            name: "Casa",
+            id : "casa",
+            path: "/casa",
+            img: "casa.png"
+        },
+        {
             name: "Cooking Panda",
             id : "cp",
             path: "/cooking-panda",
@@ -17,12 +23,6 @@ const work = {
             id : "cpshop",
             path: "/cooking-panda-shop",
             img: "cpshop.png"
-        },
-        {
-            name: "Casa",
-            id : "casa",
-            path: "/casa",
-            img: "casa.png"
         }
     ]
 };

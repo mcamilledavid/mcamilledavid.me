@@ -171,20 +171,20 @@ class Home extends Component {
                 </Slider>
             </Slide>,
             <Slide id="work">
-                <Container>
-                    <Row>
+                <div class="wrapper">
+                    <div class="row">
                         {
                             work.projects.map((project) => {
                                     return (
-                                        <Col xs={6} sm={6} md={6} lg={6} id={project.id} onClick={() => this.handleClick(project.path)}>
+                                        <div className="tile" id={project.id} onClick={() => this.handleClick(project.path)}>
                                             <img id={project.id + "-logo"} src={require(`./media/${project.img}`)} alt={project.name + "Logo"} />
-                                        </Col>
+                                        </div>
                                     );
                                 }
                             )
                         }
-                    </Row>
-                </Container>
+                    </div>
+                </div>
             </Slide>,
         ];
         fullPageOptions.slides = slides;

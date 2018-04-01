@@ -82,7 +82,7 @@ class Home extends Component {
         /* Horizontal Slides Markup */
         const horizontalSlides = [
             <Slide>
-                <video className="vid-background" autoPlay loop>
+                <video className="vid-background" autoPlay loop oncontextmenu="return false;">
                     <source src={require('./media/la.mp4')} type="video/mp4" />
                 </video>
                 <img className="img-background" src={require('./media/la-still.png')} alt="LA" />

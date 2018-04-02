@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .h1 {
@@ -87,7 +87,6 @@ h6 {
   -moz-border-radius: 5px;
   border-radius: 5px;
   font-weight: 500;
-  letter-spacing:1px;
   margin-top: 30px;
   cursor: pointer;
   font-size: 16px;
@@ -97,7 +96,7 @@ h6 {
   float: left;
 
   @include bp(large) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &:hover {
@@ -116,15 +115,13 @@ h6 {
     padding-top: 25vh;
 
     @include bp(large) {
-      padding-top: 50vh;
+      padding-top: 38vh;
     }
   }
 
   .h2 {
     font-size: 26px;
-    letter-spacing: 3px;
     font-weight: 300;
-    text-transform: uppercase;
     color: #222;
 
     @include bp(large) {
@@ -135,7 +132,6 @@ h6 {
   .h1 {
     font-size: 66px;
     line-height: 75px;
-    text-transform: uppercase;
 
     @include bp(large) {
       font-size: 70px;
@@ -167,14 +163,6 @@ h6 {
 #profile {
   .container {
     padding-top: 12vh;
-  }
-
-  .h1 {
-    @extend .h1;
-  }
-
-  .h2 {
-    @extend .h2;
   }
 
   #shaka-emoji {
@@ -291,9 +279,11 @@ h6 {
     }
   }
 
+  .back-button {
+    color: white;
+  }
 
   #teamft {
-    @extend .tile;
     background: rgba(0, 0, 0, 1);
 
     #teamft-logo {
@@ -310,7 +300,6 @@ h6 {
   }
 
   #cpshop {
-    @extend .tile;
     background: #b6da5c;
 
     #cpshop-logo {
@@ -328,7 +317,6 @@ h6 {
   }
 
   #cp {
-    @extend .tile;
     background: #89c35c;
 
     #cp-logo {
@@ -346,7 +334,6 @@ h6 {
   }
 
   #casa {
-    @extend .tile;
     background: lightslategrey;
 
     #casa-logo {
@@ -446,7 +433,6 @@ h6 {
   bottom: -120px;
 }
 
-// Back Button
 .back-button {
   position: absolute;
   cursor: pointer;
@@ -463,8 +449,23 @@ h6 {
   }
 }
 
-// Cooking Panda
-#cp-1 {
+.link-button {
+  position: absolute;
+  cursor: pointer;
+  font-weight: 300;
+  width: 25px;
+  right: 15px;
+  top: 25px;
+  z-index: 99999;
+
+  @include bp(large) {
+    right: 40px;
+    top: 30px;
+    width: 30px;
+  }
+}
+
+.slide-1 {
   background: #eee;
   text-align: left;
 
@@ -502,7 +503,7 @@ h6 {
   }
 }
 
-#cp-2 {
+.slide-2 {
   @include bp(medium) {
     padding-top: 15vh;
   }
@@ -510,7 +511,7 @@ h6 {
   .image-container {
     position: absolute;
     margin: 0 auto;
-    top: 215px;
+    top: 125px;
     right: -50px;
 
     @include bp(medium) {
@@ -544,5 +545,35 @@ h6 {
         display: none;
       }
     }
+  }
+}
+
+#cp-shop-1 {
+  .accent-container {
+    background: #bcd76e;
+  }
+}
+
+#contact {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align: center;
+
+  .h1 {
+    @include bp(large) {
+      font-size: 60px;
+    }
+  }
+
+  .button {
+    @include bp(small-down) {
+      font-size: 14px;
+      padding: 15px 30px;
+    }
+
+    margin-top: 10px;
+    float: none;
   }
 }

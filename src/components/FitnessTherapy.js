@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 
 class FitnessTherapy extends Component {
     handleClick = () => {
-        this.props.history.push('/');
+        this.props.history.push('/work');
     }
 
     render() {
@@ -19,9 +19,7 @@ class FitnessTherapy extends Component {
 
         const slides = [
             <Slide>
-                <div className="back-button-container">
-                    <div className="back-button" onClick={() => this.handleClick()}>&#8592;</div>
-                </div>
+                <div className="back-button" onClick={() => this.handleClick('/')}>&#8592;</div>
             </Slide>,
             <Slide> Slide 2
             </Slide>,

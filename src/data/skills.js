@@ -41,12 +41,12 @@ const skills = {
             img: "drupal.png"
         },
         {
-            name: "PHP",
-            img: "php.png"
+            name: "Python",
+            img: "python.png"
         },
         {
-            name: "Java",
-            img: "java.png"
+            name: "PHP",
+            img: "php.png"
         },
         {
             name: "MySQL",
@@ -57,7 +57,7 @@ const skills = {
             img: "mongodb.png"
         },
         {
-            name: "Nose.js",
+            name: "Node.js",
             img: "node.png"
         },
         {

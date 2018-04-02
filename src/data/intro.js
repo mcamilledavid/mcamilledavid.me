@@ -1,8 +1,8 @@
 const intro = {
     social: [
         {
-            name: "Email",
-            url: "mailto:ma.camilledavid@gmail.com"
+            name: "Resume",
+            url: ""
         },
         {
             name: "LinkedIn",
@@ -15,7 +15,7 @@ const intro = {
         {
             name: "Instagram",
             url: "//www.instagram.com/mcamilledavid"
-        }
+        },
     ]
 };
 

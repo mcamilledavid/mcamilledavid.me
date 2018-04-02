@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 class CookingPanda extends Component {
     handleClick = () => {
-        this.props.history.push('/');
+        this.props.history.push('/work');
     }
 
     render() {
@@ -19,15 +19,14 @@ class CookingPanda extends Component {
         };
 
         const slides = [
-            <Slide id="cp-1">
-                <div className="back-button-container">
-                    <div className="back-button" onClick={() => this.handleClick()}>&#8592;</div>
-                </div>
+            <Slide className="slide-1">
+                <div className="back-button" onClick={() => this.handleClick('/')}>&#8592;</div>
+                <a href="//cookingpanda.com"><img src={require('../media/link.png')} alt="Cooking Panda" className="link-button"/></a>
                 <Container className="container">
                     <Row>
                         <Col>
                             <div className="container">
-                                <h1 className="h1">Redesigning Cooking Panda</h1>
+                                <h1 className="h1">Revamping Cooking Panda</h1>
                                 <h2 className="h2">A complete redesign of Render Media's food vertical.</h2>
                             </div>
                             <div className="image-container">
@@ -38,13 +37,12 @@ class CookingPanda extends Component {
                 </Container>
                 <div className="accent-container"></div>
             </Slide>,
-            <Slide id="cp-2">
+            <Slide className="slide-2">
                 <Container className="container">
                     <Row>
                         <Col sm={12} md={5} lg={5} xl={5}>
                             <h1 className="h1">Responsive design</h1>
                             <h2 className="h2">Users are easily able to watch videos or get recipes at their finger tips.</h2>
-                            <a href="//cookingpanda.com" class="button">&#8594;</a>
                         </Col>
                     </Row>
                 </Container>

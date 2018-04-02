@@ -6,6 +6,7 @@ import FitnessTherapy from './components/FitnessTherapy'
 import CookingPanda from './components/CookingPanda'
 import CookingPandaShop from './components/CookingPandaShop'
 import Casa from './components/Casa'
+import Work from './components/Work'
 
 class App extends Component {
     render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Router>
                 <div class="root-wrapper">
                     <Route exact path="/" component={Home} />
+                    <Route path="/work" component={Work} />
                     <Route path="/fitness-therapy" component={FitnessTherapy} />
                     <Route path="/cooking-panda" component={CookingPanda} />
                     <Route path="/cooking-panda-shop" component={CookingPandaShop} />

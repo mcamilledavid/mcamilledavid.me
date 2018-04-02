@@ -8,7 +8,6 @@ import Slider from 'react-slick'
 import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import work from './data/work';
 import skills from './data/skills';
 import intro from './data/intro';
 
@@ -38,8 +37,8 @@ class Home extends Component {
         this.setState(updatedState);
     }
 
-    handleClick = (path) => {
-        this.props.history.push(path);
+    handleClick = () => {
+        this.props.history.push('/work');
     }
 
     render() {
@@ -51,7 +50,7 @@ class Home extends Component {
             touchSensitivity: 5,
             scrollSpeed: 150,
             resetSlides: false,
-            hideScrollBars: true,
+            hideScrollBars: false,
             enableArrowKeys: true,
             activeSlide: 0
         };
@@ -89,7 +88,7 @@ class Home extends Component {
                 <Container className="container">
                     <Row>
                         <Col sm={12} md={9} lg={7} xl={6}>
-                            <h1 className="h1">Full Stack Developer based in LA,</h1>
+                            <h1 className="h1">Full Stack Developer & Designer based in LA,</h1>
                             <h2 className="h2">with a passion for creativity and problem solving. I build websites, deploy servers, design interfaces & tinker around with mobile apps.</h2>
                             {horizontalNav}
                         </Col>
@@ -100,8 +99,8 @@ class Home extends Component {
                 <Container className="container">
                     <Row>
                         <Col sm={12} md={9} lg={7} xl={6}>
-                            <h1 className="h1">Creating designs to life & bringing them is what I love to do most,</h1>
-                            <h2 className="h2">but I can also pretty much jump into anything in between, from CMS to databases, even server admin & even e-commerce.</h2>
+                            <h1 className="h1">Creating designs & bringing them to life is what I love to do most,</h1>
+                            <h2 className="h2">but I can also pretty much jump into anything in between, from CMS to databases, even server admin & e-commerce.</h2>
                             {horizontalNav}
                         </Col>
                     </Row>
@@ -143,6 +142,7 @@ class Home extends Component {
                             <div className="container">
                                 <h2 className="h2">Hello, my name is</h2>
                                 <h1><Typist className="h1">Camille David.</Typist></h1>
+                                <div class="button" onClick={() => this.handleClick()}>View My Work</div>
                             </div>
                         </Col>
                     </Row>
@@ -170,21 +170,15 @@ class Home extends Component {
                     }
                 </Slider>
             </Slide>,
-            <Slide id="work">
-                <div class="wrapper">
-                    <div class="row">
-                        {
-                            work.projects.map((project) => {
-                                    return (
-                                        <div className="tile" id={project.id} onClick={() => this.handleClick(project.path)}>
-                                            <img id={project.id + "-logo"} src={require(`./media/${project.img}`)} alt={project.name + "Logo"} />
-                                        </div>
-                                    );
-                                }
-                            )
-                        }
-                    </div>
-                </div>
+            <Slide id="contact">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1 className="h1">Get in touch</h1>
+                            <a href="mailto:ma.camilledavid@gmail.com" className="button">Contact Me</a>
+                        </Col>
+                    </Row>
+                </Container>
             </Slide>,
         ];
         fullPageOptions.slides = slides;

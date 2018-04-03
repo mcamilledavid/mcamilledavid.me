@@ -2,9 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025984d6-a6fc-4502-ace7-5c2a2379eba7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/emoji.png" afterPath="$PROJECT_DIR$/src/media/emoji.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/la.mp4" afterPath="$PROJECT_DIR$/src/media/la.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/link.png" afterPath="$PROJECT_DIR$/src/media/link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/apache.png" afterPath="$PROJECT_DIR$/src/skills/apache.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/aws.png" afterPath="$PROJECT_DIR$/src/skills/aws.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/bootstrap.png" afterPath="$PROJECT_DIR$/src/skills/bootstrap.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/css.png" afterPath="$PROJECT_DIR$/src/skills/css.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/drupal.png" afterPath="$PROJECT_DIR$/src/skills/drupal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/express.png" afterPath="$PROJECT_DIR$/src/skills/express.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/foundation.png" afterPath="$PROJECT_DIR$/src/skills/foundation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/git.png" afterPath="$PROJECT_DIR$/src/skills/git.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/grunt.png" afterPath="$PROJECT_DIR$/src/skills/grunt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/html.png" afterPath="$PROJECT_DIR$/src/skills/html.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/illustrator.png" afterPath="$PROJECT_DIR$/src/skills/illustrator.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/java.png" afterPath="$PROJECT_DIR$/src/skills/java.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/jquery.png" afterPath="$PROJECT_DIR$/src/skills/jquery.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/js.png" afterPath="$PROJECT_DIR$/src/skills/js.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/linux.png" afterPath="$PROJECT_DIR$/src/skills/linux.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/mongodb.png" afterPath="$PROJECT_DIR$/src/skills/mongodb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/mysql.png" afterPath="$PROJECT_DIR$/src/skills/mysql.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/nginx.png" afterPath="$PROJECT_DIR$/src/skills/nginx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/node.png" afterPath="$PROJECT_DIR$/src/skills/node.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/photoshop.png" afterPath="$PROJECT_DIR$/src/skills/photoshop.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/php.png" afterPath="$PROJECT_DIR$/src/skills/php.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/python.png" afterPath="$PROJECT_DIR$/src/skills/python.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/react.png" afterPath="$PROJECT_DIR$/src/skills/react.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/sass.png" afterPath="$PROJECT_DIR$/src/skills/sass.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/terminal.png" afterPath="$PROJECT_DIR$/src/skills/terminal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/wp.png" afterPath="$PROJECT_DIR$/src/skills/wp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/casa.png" afterPath="$PROJECT_DIR$/src/work/casa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/cp.png" afterPath="$PROJECT_DIR$/src/work/cp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/cpshop.png" afterPath="$PROJECT_DIR$/src/work/cpshop.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/ft-6.png" afterPath="$PROJECT_DIR$/src/work/ft-6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/teamft.png" afterPath="$PROJECT_DIR$/src/work/teamft.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.scss" afterPath="$PROJECT_DIR$/src/App.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Home.js" afterPath="$PROJECT_DIR$/src/Home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Casa.js" afterPath="$PROJECT_DIR$/src/components/Casa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CookingPanda.js" afterPath="$PROJECT_DIR$/src/components/CookingPanda.js" />
@@ -34,7 +66,7 @@
       <file leaf-file-name="App.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7794">
+            <state relative-caret-position="9975">
               <caret line="665" column="1" lean-forward="false" selection-start-line="665" selection-start-column="1" selection-end-line="665" selection-end-column="1" />
               <folding />
             </state>
@@ -51,23 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="143" column="78" lean-forward="false" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="50" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Work.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Work.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -76,8 +106,8 @@
       <file leaf-file-name="Casa.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Casa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -88,8 +118,8 @@
       <file leaf-file-name="FitnessTherapy.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/FitnessTherapy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -100,7 +130,7 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="195">
               <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -122,8 +152,8 @@
       <file leaf-file-name="CookingPanda.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CookingPanda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -134,8 +164,8 @@
       <file leaf-file-name="CookingPandaShop.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CookingPandaShop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -208,13 +238,13 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/data/intro.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/CookingPanda.js" />
-        <option value="$PROJECT_DIR$/src/components/CookingPandaShop.js" />
-        <option value="$PROJECT_DIR$/src/components/Casa.js" />
-        <option value="$PROJECT_DIR$/src/components/FitnessTherapy.js" />
-        <option value="$PROJECT_DIR$/src/components/Work.js" />
         <option value="$PROJECT_DIR$/src/App.scss" />
         <option value="$PROJECT_DIR$/src/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/Work.js" />
+        <option value="$PROJECT_DIR$/src/components/Casa.js" />
+        <option value="$PROJECT_DIR$/src/components/FitnessTherapy.js" />
+        <option value="$PROJECT_DIR$/src/components/CookingPanda.js" />
+        <option value="$PROJECT_DIR$/src/components/CookingPandaShop.js" />
       </list>
     </option>
   </component>
@@ -309,8 +339,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,18 +446,19 @@
       <workItem from="1522533018741" duration="312000" />
       <workItem from="1522739268113" duration="1190000" />
       <workItem from="1522783999903" duration="305000" />
-      <workItem from="1522788796648" duration="2078000" />
+      <workItem from="1522788796648" duration="2143000" />
+      <workItem from="1522794473940" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102291000" />
+    <option name="totallyTimeSpent" value="102938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -547,9 +578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,9 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,9 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -608,9 +633,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +739,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,67 +760,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CookingPandaShop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Casa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FitnessTherapy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CookingPanda.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7794">
+        <state relative-caret-position="9975">
           <caret line="665" column="1" lean-forward="false" selection-start-line="665" selection-start-column="1" selection-end-line="665" selection-end-column="1" />
           <folding />
         </state>
@@ -804,11 +778,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="143" column="78" lean-forward="false" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
+        <state relative-caret-position="375">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="50" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Casa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CookingPanda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FitnessTherapy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CookingPandaShop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

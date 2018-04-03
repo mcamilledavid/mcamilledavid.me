@@ -10,11 +10,11 @@ class Casa extends Component {
 
     render() {
         const fullPageOptions = {
-            scrollSensitivity: 20,
+            scrollSensitivity: 15,
             touchSensitivity: 5,
-            scrollSpeed: 150,
+            scrollSpeed: 300,
             resetSlides: false,
-            hideScrollBars: true,
+            hideScrollBars: false,
             enableArrowKeys: true,
         };
 

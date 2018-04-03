@@ -46,9 +46,9 @@ class Home extends Component {
         const { changeHorizontalSlide } = Fullpage;
 
         const fullPageOptions = {
-            scrollSensitivity: 20,
+            scrollSensitivity: 15,
             touchSensitivity: 5,
-            scrollSpeed: 150,
+            scrollSpeed: 300,
             resetSlides: false,
             hideScrollBars: false,
             enableArrowKeys: true,

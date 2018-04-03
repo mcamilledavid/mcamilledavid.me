@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025984d6-a6fc-4502-ace7-5c2a2379eba7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/work/casa-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/work/casa-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/work/casa-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/work/ft-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/work/ft-4.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/media/logo.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/casa.png" afterPath="$PROJECT_DIR$/src/work/casa.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-1.png" afterPath="$PROJECT_DIR$/src/work/cp-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-2.png" afterPath="$PROJECT_DIR$/src/work/cp-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-3.png" afterPath="$PROJECT_DIR$/src/work/cp-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-shop-1.png" afterPath="$PROJECT_DIR$/src/work/cp-shop-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-shop-2.png" afterPath="$PROJECT_DIR$/src/work/cp-shop-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp-shop-3.png" afterPath="$PROJECT_DIR$/src/work/cp-shop-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cp.png" afterPath="$PROJECT_DIR$/src/work/cp.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/cpshop.png" afterPath="$PROJECT_DIR$/src/work/cpshop.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/media/teamft.png" afterPath="$PROJECT_DIR$/src/work/teamft.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/la-still.png" afterPath="$PROJECT_DIR$/src/media/la-still.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.scss" afterPath="$PROJECT_DIR$/src/App.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Casa.js" afterPath="$PROJECT_DIR$/src/components/Casa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CookingPanda.js" afterPath="$PROJECT_DIR$/src/components/CookingPanda.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CookingPandaShop.js" afterPath="$PROJECT_DIR$/src/components/CookingPandaShop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FitnessTherapy.js" afterPath="$PROJECT_DIR$/src/components/FitnessTherapy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Work.js" afterPath="$PROJECT_DIR$/src/components/Work.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/intro.js" afterPath="$PROJECT_DIR$/src/data/intro.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -388,11 +364,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97538000" />
+    <option name="totallyTimeSpent" value="98718000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26638478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

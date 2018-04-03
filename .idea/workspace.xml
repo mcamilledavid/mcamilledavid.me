@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025984d6-a6fc-4502-ace7-5c2a2379eba7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/emoji.png" afterPath="$PROJECT_DIR$/src/media/emoji.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/la.mp4" afterPath="$PROJECT_DIR$/src/media/la.mp4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/link.png" afterPath="$PROJECT_DIR$/src/media/link.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/apache.png" afterPath="$PROJECT_DIR$/src/skills/apache.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/aws.png" afterPath="$PROJECT_DIR$/src/skills/aws.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/bootstrap.png" afterPath="$PROJECT_DIR$/src/skills/bootstrap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/css.png" afterPath="$PROJECT_DIR$/src/skills/css.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/drupal.png" afterPath="$PROJECT_DIR$/src/skills/drupal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/express.png" afterPath="$PROJECT_DIR$/src/skills/express.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/foundation.png" afterPath="$PROJECT_DIR$/src/skills/foundation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/git.png" afterPath="$PROJECT_DIR$/src/skills/git.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/grunt.png" afterPath="$PROJECT_DIR$/src/skills/grunt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/html.png" afterPath="$PROJECT_DIR$/src/skills/html.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/illustrator.png" afterPath="$PROJECT_DIR$/src/skills/illustrator.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/java.png" afterPath="$PROJECT_DIR$/src/skills/java.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/jquery.png" afterPath="$PROJECT_DIR$/src/skills/jquery.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/js.png" afterPath="$PROJECT_DIR$/src/skills/js.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/linux.png" afterPath="$PROJECT_DIR$/src/skills/linux.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/mongodb.png" afterPath="$PROJECT_DIR$/src/skills/mongodb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/mysql.png" afterPath="$PROJECT_DIR$/src/skills/mysql.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/nginx.png" afterPath="$PROJECT_DIR$/src/skills/nginx.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/node.png" afterPath="$PROJECT_DIR$/src/skills/node.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/photoshop.png" afterPath="$PROJECT_DIR$/src/skills/photoshop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/php.png" afterPath="$PROJECT_DIR$/src/skills/php.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/python.png" afterPath="$PROJECT_DIR$/src/skills/python.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/react.png" afterPath="$PROJECT_DIR$/src/skills/react.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/sass.png" afterPath="$PROJECT_DIR$/src/skills/sass.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/terminal.png" afterPath="$PROJECT_DIR$/src/skills/terminal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skills/wp.png" afterPath="$PROJECT_DIR$/src/skills/wp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/casa.png" afterPath="$PROJECT_DIR$/src/work/casa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/cp.png" afterPath="$PROJECT_DIR$/src/work/cp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/cpshop.png" afterPath="$PROJECT_DIR$/src/work/cpshop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/ft-6.png" afterPath="$PROJECT_DIR$/src/work/ft-6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/work/teamft.png" afterPath="$PROJECT_DIR$/src/work/teamft.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Home.js" afterPath="$PROJECT_DIR$/src/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Casa.js" afterPath="$PROJECT_DIR$/src/components/Casa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CookingPanda.js" afterPath="$PROJECT_DIR$/src/components/CookingPanda.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CookingPandaShop.js" afterPath="$PROJECT_DIR$/src/components/CookingPandaShop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FitnessTherapy.js" afterPath="$PROJECT_DIR$/src/components/FitnessTherapy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Work.js" afterPath="$PROJECT_DIR$/src/components/Work.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,8 +56,8 @@
       <file leaf-file-name="Work.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="630">
+              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -447,16 +407,16 @@
       <workItem from="1522739268113" duration="1190000" />
       <workItem from="1522783999903" duration="305000" />
       <workItem from="1522788796648" duration="2143000" />
-      <workItem from="1522794473940" duration="582000" />
+      <workItem from="1522794473940" duration="1235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102938000" />
+    <option name="totallyTimeSpent" value="103591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -826,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="630">
+          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding />
         </state>
       </provider>

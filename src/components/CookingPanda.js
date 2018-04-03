@@ -30,12 +30,11 @@ class CookingPanda extends Component {
                                 <h2 className="h2">A complete redesign of Render Media's food vertical.</h2>
                             </div>
                             <div className="image-container">
-                                <img src={require('../media/cp-1.png')} alt="Cooking Panda" />
+                                <img src={require('../work/cp-1.png')} alt="Cooking Panda" />
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="accent-container"></div>
             </Slide>,
             <Slide className="slide-2">
                 <Container className="container">
@@ -47,8 +46,8 @@ class CookingPanda extends Component {
                     </Row>
                 </Container>
                 <div className="image-container">
-                    <img className="mobile" src={require('../media/cp-2.png')} alt="Cooking Panda" />
-                    <img className="desktop" src={require('../media/cp-3.png')} alt="Cooking Panda" />
+                    <img className="mobile" src={require('../work/cp-2.png')} alt="Cooking Panda" />
+                    <img className="desktop" src={require('../work/cp-3.png')} alt="Cooking Panda" />
                 </div>
             </Slide>
         ];

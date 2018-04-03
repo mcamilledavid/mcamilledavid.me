@@ -27,7 +27,7 @@ class Work extends Component {
                             work.projects.map((project) => {
                                     return (
                                         <div className="tile" id={project.id} onClick={() => this.handleClick(project.path)}>
-                                            <img id={project.id + "-logo"} src={require(`../media/${project.img}`)} alt={project.name + "Logo"} />
+                                            <img id={project.id + "-logo"} src={require(`../work/${project.img}`)} alt={project.name + "Logo"} />
                                         </div>
                                     );
                                 }

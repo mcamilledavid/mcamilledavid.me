@@ -30,25 +30,24 @@ class Casa extends Component {
                                 <h2 className="h2">A unique solution for students looking for reliable housing.</h2>
                             </div>
                             <div className="image-container">
-                                <img src={require('../media/cp-1.png')} alt="Cooking Panda" />
+                                <img src={require('../work/casa-1.png')} alt="Casa" />
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="accent-container"></div>
             </Slide>,
             <Slide className="slide-2">
                 <Container className="container">
                     <Row>
                         <Col sm={12} md={5} lg={5} xl={5}>
                             <h1 className="h1">Capstone Project</h1>
-                            <h2 className="h2">Touched the entire stack from designing the database to writing the API to implementing the UI.</h2>
+                            <h2 className="h2">Worked on the entire stack from designing the database to writing the API to implementing the UI.</h2>
                         </Col>
                     </Row>
                 </Container>
                 <div className="image-container">
-                    <img className="mobile" src={require('../media/cp-2.png')} alt="Cooking Panda" />
-                    <img className="desktop" src={require('../media/cp-3.png')} alt="Cooking Panda" />
+                    <img className="mobile" src={require('../work/casa-2.png')} alt="Casa" />
+                    <img className="desktop" src={require('../work/casa-3.png')} alt="Casa" />
                 </div>
             </Slide>
         ];

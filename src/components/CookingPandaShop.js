@@ -19,7 +19,7 @@ class CookingPandaShop extends Component {
         };
 
         const slides = [
-            <Slide className="slide-1" id="cp-shop-1">
+            <Slide className="slide-1">
                 <div className="back-button" onClick={() => this.handleClick('/')}>&#8592;</div>
                 <Container className="container">
                     <Row>
@@ -29,12 +29,11 @@ class CookingPandaShop extends Component {
                                 <h2 className="h2">An e-commerce site powered by Shopify.</h2>
                             </div>
                             <div className="image-container">
-                                <img src={require('../media/cp-shop-1.png')} alt="Cooking Panda" />
+                                <img src={require('../work/cp-shop-1.png')} alt="Cooking Panda" />
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="accent-container"></div>
             </Slide>,
             <Slide className="slide-2">
                 <Container className="container">
@@ -46,8 +45,8 @@ class CookingPandaShop extends Component {
                     </Row>
                 </Container>
                 <div className="image-container">
-                    <img className="mobile" src={require('../media/cp-shop-2.png')} alt="Cooking Panda" />
-                    <img className="desktop" src={require('../media/cp-shop-3.png')} alt="Cooking Panda" />
+                    <img className="mobile" src={require('../work/cp-shop-2.png')} alt="Cooking Panda" />
+                    <img className="desktop" src={require('../work/cp-shop-3.png')} alt="Cooking Panda" />
                 </div>
             </Slide>
         ];

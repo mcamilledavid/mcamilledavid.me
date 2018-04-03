@@ -2,7 +2,7 @@ const intro = {
     social: [
         {
             name: "Resume",
-            url: ""
+            url: "//drive.google.com/file/d/1bfRK1I2DBYfkt-tYEbYgi84m0tMAaG1S/view?usp=sharing"
         },
         {
             name: "LinkedIn",

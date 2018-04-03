@@ -10,9 +10,9 @@ class Work extends Component {
 
     render() {
         const fullPageOptions = {
-            scrollSensitivity: 20,
-            touchSensitivity: 5,
-            scrollSpeed: 150,
+            scrollSensitivity: 15,
+            touchSensitivity: 1,
+            scrollSpeed: 175,
             resetSlides: false,
             hideScrollBars: true,
             enableArrowKeys: true,

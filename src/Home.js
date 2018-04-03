@@ -47,8 +47,8 @@ class Home extends Component {
 
         const fullPageOptions = {
             scrollSensitivity: 15,
-            touchSensitivity: 5,
-            scrollSpeed: 300,
+            touchSensitivity: 1,
+            scrollSpeed: 175,
             resetSlides: false,
             hideScrollBars: false,
             enableArrowKeys: true,
@@ -81,7 +81,7 @@ class Home extends Component {
         /* Horizontal Slides Markup */
         const horizontalSlides = [
             <Slide>
-                <video className="vid-background" autoPlay loop oncontextmenu="return false;">
+                <video className="vid-background" autoPlay oncontextmenu="return false;">
                     <source src={require('./media/la.mp4')} type="video/mp4" />
                 </video>
                 <img className="img-background" src={require('./media/la-still.png')} alt="LA" />
@@ -141,7 +141,7 @@ class Home extends Component {
                             </div>
                             <div className="container">
                                 <h2 className="h2">Hello, my name is</h2>
-                                <h1><Typist className="h1">Camille David.</Typist></h1>
+                                <h1><Typist className="h1" avgTypingDelay={100}>Camille David.</Typist></h1>
                                 <div class="button" onClick={() => this.handleClick()}>View My Work</div>
                             </div>
                         </Col>

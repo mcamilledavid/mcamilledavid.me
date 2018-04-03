@@ -21,6 +21,11 @@
   }
 }
 
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: #222;
